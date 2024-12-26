@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+* { overflow-x: hidden; box-sizing: border-box; }
+body { margin: 0; padding: 0; font-family: "Poppins", serif; }
+.header img { border-radius: 125px; }
+.header h2 { margin: 20px; }
+input , textarea { outline: none; }
+.success-message { color: green; }
+.error-message { color: red; }
+.success-message, .error-message, .loading { text-align: center; }
+button { cursor: pointer; font-family: "Poppins", serif; }
+#contactForm{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #efefef;
+}
+.success-message, .error-message , .loading { display: none; }
+.header-body{
+	display: flex;
+	align-items: center;
+	font-family: "Henny Penny", serif;
+	margin: 0px 0px 0px 40px;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header button{
+	background: transparent;
+	border: none;
+	font-size: 22px;
+	overflow: hidden;
+}
+.header-btn{
+	justify-content: flex-end;
+	align-items: center;
+}
+.menu-buttons button{
+	background: transparent;
+	border: none;
+	font-size: 22px;
+	overflow: hidden;
+}
+.menu-buttons{
+    background: #c9c9c9;
+    width: 140px;
+    border-radius: 125px;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 0px 0px 0px 13pc;
+}
+.body img{
+	box-shadow: 0px 20px 30px rgb(0 0 0 / 15%);
+}
+.body > .whatsapp{ 
+	display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    background: green;
+    color: #fff;
+    border: none;
+    justify-content: center;
+ }
+.contact-info img { width: 200px; margin: 0px 15px 0px 0px; }
+.contact { text-align: center; text-decoration: underline; font-weight: 600; }
+.contact-info h4 { margin: 0px; font-size: 16px; font-weight: 500; }
+.body h4 { font-weight: 300; font-size: 21px;  text-align: left; }
+.body h3 { font-size: 20px; font-weight: 600; border-top: 3px solid #4a0638; text-align: left; }
+@media (min-width: 768px){
+	.menu-icon, .menu-buttons { display: none; }
+	.header-btn{ display: flex !important; margin: 0px 0px 0px 22cm; }
+	.mob-hr , .anim { display: none; }
+	.header { border-bottom: 1.8px solid; }
+	.body { display: flex; flex-direction: column; justify-content: center; margin: 20px 150px 10px 150px; }
+	.body img { border-radius: 12px; width: 500px; }
+	.body-image { display: flex; align-items: center; justify-content: center; }
+	.details { margin: 20px 150px 10px 150px; display: flex; background: #eee; padding: 20px; }
+	.details-inner { display: flex; flex-direction: column; }
+	.details h3 { font-size: 36px; margin: 0px; }
+	.details p { font-size: 20px; border-top: 3px solid #4a0638; }
+	.details img { width: 600px; margin: 0px 30px 0px 0px; }
+	.about  { margin: 20px 150px 10px 150px; }
+	.about img { width: 980px; }
+	.about h3 { font-size: 24px; font-weight: 600; }
+	.about h4 { font-size: 20px; font-weight: 400; }
+	#contactForm input , textarea{ margin: 10px 0px 0px 0px; padding: 10px; width: 70%; border-radius: 4px; border: 1px solid #d4d7e5; resize: none; }
+	#contactForm button { padding: 8px; margin: 10px; width: 70%; background: #4a0638; border: none; border-radius: 4px; color: #fff; }
+	#contactForm { margin: 20px 150px 10px 150px; padding: 20px; }
+	.contact-info { margin: 20px 150px 10px 150px; padding: 15px; background: #eee; display: flex; align-items: center; }
+}
+@media (max-width: 600px){
+	.header-body{ margin: 0px 0px 0px 20px; }
+	.header h2 { margin: 15px; }
+	.menu-buttons , .header-btn , .details-inner > p { display: none; }
+	.menu-icon { margin: 0px 0px 0px 120px; }
+	.mob-hr { border: 1.5px solid; }
+	.body { margin: 25px; }
+	.body img { width: 340px; border-radius: 12px; }
+	.details img { width: 600px; border-radius: 8px; margin: 0px 15px 0px 0px; }
+	.details h3 { font-size: 18px; font-weight: 500; }
+	.details { display: flex; align-items: center; justify-content: center; background: #eee; margin: 10px; padding: 25px; }
+	.about { margin: 10px; padding: 20px; display: flex; align-items: center; flex-direction: column; }
+	.about img { width: 365px; }
+	.about h3 { font-size: 25px; text-decoration: underline; }
+	.about h4 { margin: 0; font-size: 17px; font-weight: 400; }
+	#contactForm input , textarea{ margin: 10px 0px 0px 0px; padding: 10px; width: 70%; border-radius: 4px; border: 1px solid #d4d7e5; resize: none; }
+	.contact-info { margin: 10px; padding: 15px; background: #eee; display: flex; align-items: center; }
+	#contactForm button { padding: 8px; margin: 10px; width: 70%; background: #4a0638; border: none; border-radius: 4px; color: #fff; }
+	#contactForm { margin: 10px; padding: 20px; }
+}
