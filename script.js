@@ -1,5 +1,6 @@
 function redirectToWhatsApp() {
-    const phone = "918987726266"; 
+    const countryCode = "+91"
+    const phone = "8987726266";  
     const message = "I want to make a tournament application";
     window.location.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
